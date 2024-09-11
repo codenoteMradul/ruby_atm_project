@@ -1,0 +1,28 @@
+
+[1mFrom:[0m /home/dev37/ruby_test/atm_project/Bank.rb:79 Bank#transfer:
+
+    [1;34m67[0m: [32mdef[0m [1;34mtransfer[0m(name,name2,pin,amount)
+    [1;34m68[0m:   acc1 = find_account(name)
+    [1;34m69[0m:   acc2 = find_account(name2)
+    [1;34m70[0m:    
+    [1;34m71[0m:  [32mif[0m acc1[[33m:pin[0m] == pin	
+    [1;34m72[0m:  	  [32mif[0m acc1[[33m:amount[0m] >= amount
+    [1;34m73[0m:  	  	 acc1[[33m:amount[0m] -= amount
+    [1;34m74[0m:  	  	 acc2[[33m:amount[0m] += amount
+    [1;34m75[0m:  	  	 puts [31m[1;31m"[0m[31mtransfer successfull[1;31m"[0m[31m[0m
+    [1;34m76[0m:  	  	 puts [31m[1;31m"[0m[31mamounted left in #{name}[0m[31m is #{acc1[:amount]}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m77[0m:  	  	 puts [31m[1;31m"[0m[31mamount of #{name2}[0m[31m is #{acc2[:amount]}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m78[0m:         binding.pry
+ => [1;34m79[0m:  	  	 details = {[35mamount[0m: amount,[35mname[0m: name2}
+    [1;34m80[0m:  	  	 acc1[[33m:transaction[0m] << details
+    [1;34m81[0m: 
+    [1;34m82[0m:  	  [32melse[0m
+    [1;34m83[0m:  	  	puts [31m[1;31m"[0m[31minsufficient funds[1;31m"[0m[31m[0m
+    [1;34m84[0m:  	  [32mend[0m	 
+    [1;34m85[0m: 
+    [1;34m86[0m:  [32melse[0m
+    [1;34m87[0m:  	puts [31m[1;31m"[0m[31myou enter the wrong pin[1;31m"[0m[31m[0m
+    [1;34m88[0m:  [32mend[0m
+    [1;34m89[0m: 
+    [1;34m90[0m: [32mend[0m
+
